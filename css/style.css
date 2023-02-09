@@ -1,0 +1,134 @@
+body{
+   /* Set line spacing */
+   line-height: 1.5;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin: 10px 10px 10px 10px;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline;
+    margin: 50px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgb(255, 224, 100);
+}
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+}
+
+a:visited{
+    /* Set color */
+    color: black;
+
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 5px;
+    text-transform: uppercase;
+}
+
+
+h1{
+   /*Set font and font size*/
+    font-family: Merriweather, Anton, "Times New Roman", Lato;
+    font-size: 50px;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-size: 40px;
+    font-family: Anton, "Times New Roman", Lato;
+    text-align: center;
+}
+
+h3{
+    /*Set font size*/
+    font-size: 30px;
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-top: 30px;
+}
+
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(235, 231, 255);
+    justify-content: space-between;
+    border-radius: 10px;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    background-color: white;
+    border: 3px solid #8800ff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 20px 0px 10px rgb(165, 165, 165);
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+    box-shadow: -20px 0px 10px rgb(165, 165, 165);
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: -20px 0px 10px rgb(165, 165, 165), 20px 0px 10px rgb(165, 165, 165) ;
+}
+    
+
+p + p {
+     /* Set indentation */
+     text-indent: 10px;
+  }
+  
+p{
+     /* Set margin */
+     margin-top: 10px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+    list-style-image: url("../images/sketchbook.png");
+}
